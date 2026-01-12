@@ -1,183 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Job Platfrom</title>
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-        }
-        body {
-        background: linear-gradient(to bottom, #e8f7ef 50%, #3fa37b 50%);
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        }
-        .background .circle {
-        position: absolute;
-        border-radius: 50%;
-        background: radial-gradient(circle, #8fd4b4, #3fa37b);
-        opacity: 0.8;
-        filter: blur(4px);
-        }
-        .circle1 {
-        width: 180px;
-        height: 180px;
-        top: 50px;
-        right: 80px;
-        }
-        .circle2 {
-        width: 130px;
-        height: 130px;
-        bottom: 80px;
-        left: 60px;
-        }
-        .circle3 {
-        width: 100px;
-        height: 100px;
-        bottom: 150px;
-        right: 200px;
-        }
-        .form-container {
-        background: #ffffff;
-        width: 700px;
-        border-radius: 25px;
-        padding: 40px 50px;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-        position: relative;
-        z-index: 2;
-        }
-        h2 {
-        text-align: center;
-        margin-bottom: 25px;
-        color: #2f7056;
-        }
-        fieldset {
-        border: 2px solid #a9e0c6;
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 20px;
-        }
-        legend {
-        color: #2f7056;
-        font-weight: 600;
-        padding: 0 10px;
-        }
-        label {
-        display: block;
-        margin: 10px 0 5px;
-        color: #333;
-        }
-        input, select, textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1.5px solid #cdecd9;
-        border-radius: 8px;
-        background: #f7fdf9;
-        transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        input:focus, select:focus, textarea:focus {
-        border-color: #3fa37b;
-        box-shadow: 0 0 4px #8fd4b4;
-        outline: none;
-        }
-        .skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 5px;
-        }
-        .skills label {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        }
-        button {
-        display: block;
-        width: 100%;
-        background: #3fa37b;
-        color: white;
-        border: none;
-        padding: 14px;
-        border-radius: 25px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s;
-        }
-        button:hover {
-        background: #358b68;
-        }
-        input:invalid, textarea:invalid {
-        border-color: #e77b7b;
-        }
-        input:valid {
-        border-color: #58c48b;
-        }
-    </style>
-</head>
-<body>
-    <div class="background">
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
-    </div>
+    <head>
+        <meta charset="utf-8">
+        <title>Chanasit's Note</title>
+    </head>
+    <body>
+    <center>
+        <center>
+         <nav>
+            <a href="index.html">หน้าเเรก</a> |
+            <a href="aboutme.html">เกี่ยวกับฉัน</a> |
+            <a href="zom.html">อลิสา</a> |
+            <a href="aom.html">ศตพร</a> |
+            <a href="oom.html">ณัฐธิดา</a> |
+            <a href="fern.html">ศศิวิมล</a> |
+            <a href="win.html">จารุเดช</a>
+        </nav>
+        </center>
 
-    <div class="form-container">
-        <h2>แบบฟอร์มสมัครงาน</h2>
+        <hr>
+        
+        <h1>Welcome to My Website</h1>
+        <p1>This is my first webpage!</p1>
 
-        <form>
-            <fieldset>
-                <legend>ข้อมูลส่วนตัว</legend>
-                <label>ชื่อ-นามสกุล *</label>
-                <input type="text" name="fullname" required>
+        <h2>About me</h2>
+        <p>I am learning HTML.</p>
 
-                <label>อีเมล *</label>
-                <input type="email" name="email" required>
+        <h2>My Favorite Fruits</h2>
+        <ul>
+            <li>Avocado</li>
+            <li>Banana</li>
+            <li>Water-melon</li>
+        </ul>
 
-                <label>เบอร์โทรศัพท์ *</label>
-                <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="xxx-xxx-xxxx" required>
+        <h2>Useful Links</h2>
+        <a href="https://www.w3schools.com">Learn at W3Schools</a>
+        <a href="basichtml2.html">Home</a>
+        <br><br>
+        <a href="aboutme.html"><button>Next</button></a>
+        <button>Click Me!</button>
+    </center>
+    </body>
 
-                <label>วันเกิด</label>
-                <input type="date" name="birth">
-            </fieldset>
-
-            <fieldset>
-                <legend>ข้อมูลการสมัคร</legend>
-                <label>ตำแหน่งที่สนใจ</label>
-                <select name="position">
-                    <option value="">-- กรุณาเลือกตำแหน่ง --</option>
-                    <option>Frontend Developer</option>
-                    <option>Backend Developer</option>
-                    <option>UI/UX Designer</option>
-                    <option>Data Analyst</option>
-                </select>
-
-                <label>ประสบการณ์ทำงาน (ปี)</label>
-                <input type="number" name="experience" min="0">
-
-                <label>ทักษะ</label>
-                <div class="skills">
-                    <label><input type="checkbox" name="skills" value="html"> HTML</label>
-                    <label><input type="checkbox" name="skills" value="css"> CSS</label>
-                    <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
-                    <label><input type="checkbox" name="skills" value="python"> Python</label>
-                </div>
-
-                <label>แนะนำตัว</label>
-                <textarea name="intro" rows="4" placeholder="เขียนแนะนำตัวสั้น ๆ..."></textarea>
-
-                <label>อัพโหลด Resume (.pdf)</label>
-                <input type="file" name="resume" accept=".pdf">
-            </fieldset>
-
-            <button type="submit">ส่งใบสมัคร</button>
-        </form>
-    </div>
-</body>
 </html>
